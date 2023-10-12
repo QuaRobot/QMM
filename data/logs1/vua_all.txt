@@ -1,0 +1,32 @@
+DATA:
+  data_dir: ./data
+  max_left_len: 145
+  max_right_len: 70
+  plm: ../roberta-base
+  sep_puncs: [',', ' ,', '?', ' ?', ';', ' ;', '.', ' .', '!', ' !', '</s>', '[SEP]']
+  use_context: False
+  use_eg_sent: True
+  use_pos: True
+MODEL:
+  cat_method: cat_abs_dot
+  dropout: 0.8
+  embed_dim: 768
+  first_last_avg: True
+  num_classes: 2
+  num_heads: 12
+TRAIN:
+  class_weight: 5
+  lr: 5e-06
+  output: ./data/logs1
+  train_batch_size: 32
+  train_epochs: 200
+  val_batch_size: 32
+  warmup_epochs: 2
+eval_mode: False
+gpu: 0
+log: vua_all
+seed: 4
+./data\VUA_All/g_train.csv finished, the max target is 108
+./data\VUA_All/g_val.csv finished, the max target is 105
+./data\VUA_All/g_test.csv finished, the max target is 115
+===== Start training: epoch 1 =====

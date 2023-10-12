@@ -1,0 +1,932 @@
+DATA:
+  data_dir: ./data
+  max_left_len: 140
+  max_right_len: 70
+  plm: ../roberta-base
+  sep_puncs: [',', ' ,', '?', ' ?', ';', ' ;', '.', ' .', '!', ' !', '</s>', '[SEP]']
+  use_context: False
+  use_eg_sent: True
+  use_pos: False
+MODEL:
+  cat_method: cat_abs_dot
+  dropout: 0.8
+  embed_dim: 768
+  first_last_avg: True
+  num_classes: 2
+  num_heads: 12
+TRAIN:
+  class_weight: 4
+  lr: 5e-06
+  output: ./data/logs1
+  train_batch_size: 32
+  train_epochs: 200
+  val_batch_size: 32
+  warmup_epochs: 2
+eval_mode: False
+gpu: 0
+log: vua_verb
+seed: 4
+./data\VUA_Verb/g_train.csv finished, the max target is 99
+./data\VUA_Verb/g_val.csv finished, the max target is 97
+./data\VUA_Verb/g_test.csv finished, the max target is 101
+===== Start training: epoch 1 =====
+Timing: 400.92195105552673, Epoch: 1, training loss: 3247.979467988014, current learning rate 0.005, 5e-06
+accuracy:      0.753
+precision:     0.528
+recall:        0.782
+f1:            0.631
+accuracy:      0.776
+precision:     0.600
+recall:        0.764
+f1:            0.672
+===== Start training: epoch 2 =====
+Timing: 377.1209065914154, Epoch: 2, training loss: 605.3835397958755, current learning rate 0.005, 5e-06
+accuracy:      0.832
+precision:     0.669
+recall:        0.746
+f1:            0.705
+accuracy:      0.823
+precision:     0.697
+recall:        0.722
+f1:            0.709
+===== Start training: epoch 3 =====
+Timing: 377.26683616638184, Epoch: 3, training loss: 554.0518751740456, current learning rate 0.005, 5e-06
+accuracy:      0.648
+precision:     0.431
+recall:        0.968
+f1:            0.597
+accuracy:      0.662
+precision:     0.469
+recall:        0.966
+f1:            0.632
+===== Start training: epoch 4 =====
+Timing: 377.22606229782104, Epoch: 4, training loss: 534.7159424424171, current learning rate 0.005, 5e-06
+accuracy:      0.840
+precision:     0.674
+recall:        0.784
+f1:            0.725
+accuracy:      0.825
+precision:     0.691
+recall:        0.754
+f1:            0.721
+===== Start training: epoch 5 =====
+Timing: 377.4622800350189, Epoch: 5, training loss: 494.782269179821, current learning rate 0.005, 5e-06
+accuracy:      0.831
+precision:     0.648
+recall:        0.812
+f1:            0.721
+accuracy:      0.826
+precision:     0.685
+recall:        0.781
+f1:            0.730
+===== Start training: epoch 6 =====
+Timing: 377.324200630188, Epoch: 6, training loss: 472.6492611169815, current learning rate 0.005, 5e-06
+accuracy:      0.856
+precision:     0.746
+recall:        0.703
+f1:            0.724
+accuracy:      0.838
+precision:     0.757
+recall:        0.676
+f1:            0.714
+===== Start training: epoch 7 =====
+Timing: 377.6339554786682, Epoch: 7, training loss: 460.6580640077591, current learning rate 0.005, 5e-06
+accuracy:      0.853
+precision:     0.729
+recall:        0.724
+f1:            0.726
+accuracy:      0.837
+precision:     0.751
+recall:        0.685
+f1:            0.717
+===== Start training: epoch 8 =====
+Timing: 377.5171642303467, Epoch: 8, training loss: 455.6958926320076, current learning rate 0.005, 5e-06
+accuracy:      0.852
+precision:     0.703
+recall:        0.776
+f1:            0.738
+accuracy:      0.832
+precision:     0.714
+recall:        0.735
+f1:            0.724
+===== Start training: epoch 9 =====
+Timing: 377.91145420074463, Epoch: 9, training loss: 444.85291761159897, current learning rate 0.005, 5e-06
+accuracy:      0.863
+precision:     0.782
+recall:        0.681
+f1:            0.728
+accuracy:      0.839
+precision:     0.795
+recall:        0.626
+f1:            0.700
+===== Start training: epoch 10 =====
+Timing: 377.653156042099, Epoch: 10, training loss: 445.5768820643425, current learning rate 0.005, 5e-06
+accuracy:      0.850
+precision:     0.750
+recall:        0.666
+f1:            0.705
+accuracy:      0.831
+precision:     0.786
+recall:        0.600
+f1:            0.681
+===== Start training: epoch 11 =====
+Timing: 377.63911628723145, Epoch: 11, training loss: 437.0878707766533, current learning rate 0.005, 5e-06
+accuracy:      0.861
+precision:     0.836
+recall:        0.603
+f1:            0.701
+accuracy:      0.828
+precision:     0.825
+recall:        0.539
+f1:            0.652
+===== Start training: epoch 12 =====
+Timing: 377.6910104751587, Epoch: 12, training loss: 440.08216935396194, current learning rate 0.005, 5e-06
+accuracy:      0.864
+precision:     0.731
+recall:        0.784
+f1:            0.757
+accuracy:      0.844
+precision:     0.743
+recall:        0.734
+f1:            0.738
+===== Start training: epoch 13 =====
+Timing: 377.72764778137207, Epoch: 13, training loss: 461.5833838582039, current learning rate 0.005, 5e-06
+accuracy:      0.862
+precision:     0.729
+recall:        0.776
+f1:            0.752
+accuracy:      0.845
+precision:     0.752
+recall:        0.721
+f1:            0.736
+===== Start training: epoch 14 =====
+Timing: 375.7571921348572, Epoch: 14, training loss: 500.2778170108795, current learning rate 0.005, 5e-06
+accuracy:      0.864
+precision:     0.749
+recall:        0.741
+f1:            0.745
+accuracy:      0.846
+precision:     0.760
+recall:        0.712
+f1:            0.735
+===== Start training: epoch 15 =====
+Timing: 377.80705308914185, Epoch: 15, training loss: 415.98185908794403, current learning rate 0.005, 5e-06
+accuracy:      0.873
+precision:     0.790
+recall:        0.720
+f1:            0.753
+accuracy:      0.845
+precision:     0.787
+recall:        0.662
+f1:            0.719
+===== Start training: epoch 16 =====
+Timing: 377.7964460849762, Epoch: 16, training loss: 427.5724028944969, current learning rate 0.005, 5e-06
+accuracy:      0.867
+precision:     0.782
+recall:        0.703
+f1:            0.740
+accuracy:      0.844
+precision:     0.794
+recall:        0.647
+f1:            0.713
+===== Start training: epoch 17 =====
+Timing: 378.3001790046692, Epoch: 17, training loss: 432.2754165530205, current learning rate 0.005, 5e-06
+accuracy:      0.868
+precision:     0.753
+recall:        0.761
+f1:            0.757
+accuracy:      0.840
+precision:     0.753
+recall:        0.697
+f1:            0.724
+===== Start training: epoch 18 =====
+Timing: 377.68754982948303, Epoch: 18, training loss: 444.15445548295975, current learning rate 0.005, 5e-06
+accuracy:      0.867
+precision:     0.768
+recall:        0.726
+f1:            0.746
+accuracy:      0.850
+precision:     0.793
+recall:        0.675
+f1:            0.729
+===== Start training: epoch 19 =====
+Timing: 377.4228925704956, Epoch: 19, training loss: 733.7774658203125, current learning rate 0.005, 5e-06
+accuracy:      0.867
+precision:     0.755
+recall:        0.750
+f1:            0.752
+accuracy:      0.845
+precision:     0.759
+recall:        0.706
+f1:            0.732
+===== Start training: epoch 20 =====
+Timing: 377.64797258377075, Epoch: 20, training loss: 508.8131211400032, current learning rate 0.005, 5e-06
+accuracy:      0.871
+precision:     0.846
+recall:        0.638
+f1:            0.727
+accuracy:      0.827
+precision:     0.813
+recall:        0.550
+f1:            0.656
+===== Start training: epoch 21 =====
+Timing: 377.7330708503723, Epoch: 21, training loss: 456.712089240551, current learning rate 0.005, 5e-06
+accuracy:      0.868
+precision:     0.794
+recall:        0.688
+f1:            0.737
+accuracy:      0.841
+precision:     0.787
+recall:        0.644
+f1:            0.708
+===== Start training: epoch 22 =====
+Timing: 377.8441250324249, Epoch: 22, training loss: 461.0393909215927, current learning rate 0.005, 5e-06
+accuracy:      0.872
+precision:     0.816
+recall:        0.677
+f1:            0.740
+accuracy:      0.844
+precision:     0.817
+recall:        0.618
+f1:            0.704
+===== Start training: epoch 23 =====
+Timing: 377.6819715499878, Epoch: 23, training loss: 497.3364225625992, current learning rate 0.005, 5e-06
+accuracy:      0.871
+precision:     0.778
+recall:        0.731
+f1:            0.753
+accuracy:      0.852
+precision:     0.786
+recall:        0.693
+f1:            0.737
+===== Start training: epoch 24 =====
+Timing: 377.8199646472931, Epoch: 24, training loss: 532.3060107827187, current learning rate 0.005, 5e-06
+accuracy:      0.872
+precision:     0.772
+recall:        0.744
+f1:            0.757
+accuracy:      0.846
+precision:     0.772
+recall:        0.692
+f1:            0.730
+===== Start training: epoch 25 =====
+Timing: 378.14791226387024, Epoch: 25, training loss: 551.6491148471832, current learning rate 0.005, 5e-06
+accuracy:      0.875
+precision:     0.781
+recall:        0.744
+f1:            0.762
+accuracy:      0.848
+precision:     0.780
+recall:        0.685
+f1:            0.730
+===== Start training: epoch 26 =====
+Timing: 377.92127561569214, Epoch: 26, training loss: 447.6732192635536, current learning rate 0.005, 5e-06
+accuracy:      0.864
+precision:     0.889
+recall:        0.567
+f1:            0.692
+accuracy:      0.828
+precision:     0.867
+recall:        0.504
+f1:            0.637
+===== Start training: epoch 27 =====
+Timing: 377.6280868053436, Epoch: 27, training loss: 757.8325865268707, current learning rate 0.005, 5e-06
+accuracy:      0.865
+precision:     0.784
+recall:        0.690
+f1:            0.734
+accuracy:      0.843
+precision:     0.793
+recall:        0.644
+f1:            0.711
+===== Start training: epoch 28 =====
+Timing: 377.0595281124115, Epoch: 28, training loss: 586.917004942894, current learning rate 0.005, 5e-06
+accuracy:      0.878
+precision:     0.816
+recall:        0.707
+f1:            0.758
+accuracy:      0.846
+precision:     0.800
+recall:        0.651
+f1:            0.718
+===== Start training: epoch 29 =====
+Timing: 377.814954996109, Epoch: 29, training loss: 485.0466887950897, current learning rate 0.005, 5e-06
+accuracy:      0.869
+precision:     0.834
+recall:        0.640
+f1:            0.724
+accuracy:      0.836
+precision:     0.822
+recall:        0.579
+f1:            0.680
+===== Start training: epoch 30 =====
+Timing: 378.067729473114, Epoch: 30, training loss: 489.3511169552803, current learning rate 0.005, 5e-06
+accuracy:      0.869
+precision:     0.799
+recall:        0.688
+f1:            0.739
+accuracy:      0.844
+precision:     0.801
+recall:        0.641
+f1:            0.712
+===== Start training: epoch 31 =====
+Timing: 377.40826416015625, Epoch: 31, training loss: 501.20109540224075, current learning rate 0.005, 5e-06
+accuracy:      0.871
+precision:     0.788
+recall:        0.713
+f1:            0.749
+accuracy:      0.846
+precision:     0.784
+recall:        0.670
+f1:            0.722
+===== Start training: epoch 32 =====
+Timing: 377.31582951545715, Epoch: 32, training loss: 531.0520229935646, current learning rate 0.005, 5e-06
+accuracy:      0.876
+precision:     0.821
+recall:        0.690
+f1:            0.749
+accuracy:      0.848
+precision:     0.827
+recall:        0.625
+f1:            0.712
+===== Start training: epoch 33 =====
+Timing: 377.52815103530884, Epoch: 33, training loss: 533.3833368420601, current learning rate 0.005, 5e-06
+accuracy:      0.874
+precision:     0.766
+recall:        0.763
+f1:            0.765
+accuracy:      0.850
+precision:     0.776
+recall:        0.701
+f1:            0.737
+===== Start training: epoch 34 =====
+Timing: 378.35267066955566, Epoch: 34, training loss: 507.37515437602997, current learning rate 0.005, 5e-06
+accuracy:      0.853
+precision:     0.695
+recall:        0.806
+f1:            0.747
+accuracy:      0.844
+precision:     0.719
+recall:        0.788
+f1:            0.752
+===== Start training: epoch 35 =====
+Timing: 377.5687139034271, Epoch: 35, training loss: 519.4991092085838, current learning rate 0.005, 5e-06
+accuracy:      0.868
+precision:     0.809
+recall:        0.668
+f1:            0.732
+accuracy:      0.844
+precision:     0.814
+recall:        0.620
+f1:            0.704
+===== Start training: epoch 36 =====
+Timing: 377.7450258731842, Epoch: 36, training loss: 521.8052731752396, current learning rate 0.005, 5e-06
+accuracy:      0.874
+precision:     0.791
+recall:        0.720
+f1:            0.754
+accuracy:      0.849
+precision:     0.796
+recall:        0.667
+f1:            0.726
+===== Start training: epoch 37 =====
+Timing: 376.4682171344757, Epoch: 37, training loss: 743.0067219138145, current learning rate 0.005, 5e-06
+accuracy:      0.874
+precision:     0.805
+recall:        0.703
+f1:            0.750
+accuracy:      0.845
+precision:     0.795
+recall:        0.652
+f1:            0.717
+===== Start training: epoch 38 =====
+Timing: 377.5816504955292, Epoch: 38, training loss: 506.67850905656815, current learning rate 0.005, 5e-06
+accuracy:      0.867
+precision:     0.852
+recall:        0.610
+f1:            0.711
+accuracy:      0.835
+precision:     0.858
+recall:        0.539
+f1:            0.662
+===== Start training: epoch 39 =====
+Timing: 376.9242887496948, Epoch: 39, training loss: 611.7885816693306, current learning rate 0.005, 5e-06
+accuracy:      0.874
+precision:     0.764
+recall:        0.769
+f1:            0.767
+accuracy:      0.842
+precision:     0.764
+recall:        0.687
+f1:            0.723
+===== Start training: epoch 40 =====
+Timing: 376.7894480228424, Epoch: 40, training loss: 594.9348403811455, current learning rate 0.005, 5e-06
+accuracy:      0.868
+precision:     0.843
+recall:        0.625
+f1:            0.718
+accuracy:      0.842
+precision:     0.856
+recall:        0.568
+f1:            0.683
+===== Start training: epoch 41 =====
+Timing: 375.3022119998932, Epoch: 41, training loss: 1496.1614366173744, current learning rate 0.005, 5e-06
+accuracy:      0.878
+precision:     0.806
+recall:        0.718
+f1:            0.759
+accuracy:      0.849
+precision:     0.819
+recall:        0.638
+f1:            0.717
+===== Start training: epoch 42 =====
+Timing: 375.9713170528412, Epoch: 42, training loss: 887.402427136898, current learning rate 0.005, 5e-06
+accuracy:      0.876
+precision:     0.802
+recall:        0.716
+f1:            0.756
+accuracy:      0.846
+precision:     0.810
+recall:        0.637
+f1:            0.713
+===== Start training: epoch 43 =====
+Timing: 376.0289132595062, Epoch: 43, training loss: 531.2381684184074, current learning rate 0.005, 5e-06
+accuracy:      0.868
+precision:     0.728
+recall:        0.815
+f1:            0.769
+accuracy:      0.847
+precision:     0.740
+recall:        0.758
+f1:            0.749
+===== Start training: epoch 44 =====
+Timing: 375.60290455818176, Epoch: 44, training loss: 1073.125178515911, current learning rate 0.005, 5e-06
+accuracy:      0.876
+precision:     0.832
+recall:        0.675
+f1:            0.745
+accuracy:      0.842
+precision:     0.837
+recall:        0.589
+f1:            0.691
+===== Start training: epoch 45 =====
+Timing: 375.5867519378662, Epoch: 45, training loss: 735.0316566228867, current learning rate 0.005, 5e-06
+accuracy:      0.873
+precision:     0.786
+recall:        0.726
+f1:            0.755
+accuracy:      0.845
+precision:     0.802
+recall:        0.642
+f1:            0.713
+===== Start training: epoch 46 =====
+Timing: 376.0439920425415, Epoch: 46, training loss: 778.1622134447098, current learning rate 0.005, 5e-06
+accuracy:      0.866
+precision:     0.840
+recall:        0.621
+f1:            0.714
+accuracy:      0.835
+precision:     0.828
+recall:        0.567
+f1:            0.673
+===== Start training: epoch 47 =====
+Timing: 375.43028712272644, Epoch: 47, training loss: 726.5185014605522, current learning rate 0.005, 5e-06
+accuracy:      0.873
+precision:     0.777
+recall:        0.741
+f1:            0.759
+accuracy:      0.849
+precision:     0.778
+recall:        0.697
+f1:            0.735
+===== Start training: epoch 48 =====
+Timing: 375.92001461982727, Epoch: 48, training loss: 573.8936678767204, current learning rate 0.005, 5e-06
+accuracy:      0.861
+precision:     0.861
+recall:        0.575
+f1:            0.690
+accuracy:      0.833
+precision:     0.869
+recall:        0.523
+f1:            0.653
+===== Start training: epoch 49 =====
+Timing: 375.3300316333771, Epoch: 49, training loss: 1023.9335262775421, current learning rate 0.005, 5e-06
+accuracy:      0.871
+precision:     0.804
+recall:        0.690
+f1:            0.742
+accuracy:      0.849
+precision:     0.821
+recall:        0.634
+f1:            0.716
+===== Start training: epoch 50 =====
+Timing: 375.80959820747375, Epoch: 50, training loss: 726.7879583835602, current learning rate 0.005, 5e-06
+accuracy:      0.869
+precision:     0.850
+recall:        0.623
+f1:            0.719
+accuracy:      0.840
+precision:     0.844
+recall:        0.573
+f1:            0.682
+===== Start training: epoch 51 =====
+Timing: 375.6229519844055, Epoch: 51, training loss: 926.0651152133942, current learning rate 0.005, 5e-06
+accuracy:      0.870
+precision:     0.748
+recall:        0.780
+f1:            0.764
+accuracy:      0.844
+precision:     0.749
+recall:        0.722
+f1:            0.735
+===== Start training: epoch 52 =====
+Timing: 375.2511088848114, Epoch: 52, training loss: 800.3248129487038, current learning rate 0.005, 5e-06
+accuracy:      0.866
+precision:     0.861
+recall:        0.599
+f1:            0.706
+accuracy:      0.837
+precision:     0.855
+recall:        0.549
+f1:            0.668
+===== Start training: epoch 53 =====
+Timing: 375.44438457489014, Epoch: 53, training loss: 1361.5494211316109, current learning rate 0.005, 5e-06
+accuracy:      0.866
+precision:     0.823
+recall:        0.640
+f1:            0.720
+accuracy:      0.838
+precision:     0.829
+recall:        0.578
+f1:            0.681
+===== Start training: epoch 54 =====
+Timing: 374.6905629634857, Epoch: 54, training loss: 1220.0391873717308, current learning rate 0.005, 5e-06
+accuracy:      0.872
+precision:     0.805
+recall:        0.692
+f1:            0.744
+accuracy:      0.837
+precision:     0.790
+recall:        0.622
+f1:            0.696
+===== Start training: epoch 55 =====
+Timing: 375.29061245918274, Epoch: 55, training loss: 852.3877828121185, current learning rate 0.005, 5e-06
+accuracy:      0.867
+precision:     0.864
+recall:        0.601
+f1:            0.709
+accuracy:      0.832
+precision:     0.855
+recall:        0.531
+f1:            0.655
+===== Start training: epoch 56 =====
+Timing: 375.0626153945923, Epoch: 56, training loss: 1110.9776278734207, current learning rate 0.005, 5e-06
+accuracy:      0.876
+precision:     0.788
+recall:        0.737
+f1:            0.762
+accuracy:      0.844
+precision:     0.775
+recall:        0.675
+f1:            0.722
+===== Start training: epoch 57 =====
+Timing: 374.92403173446655, Epoch: 57, training loss: 1316.8622134327888, current learning rate 0.005, 5e-06
+accuracy:      0.869
+precision:     0.778
+recall:        0.718
+f1:            0.747
+accuracy:      0.845
+precision:     0.784
+recall:        0.666
+f1:            0.720
+===== Start training: epoch 58 =====
+Timing: 374.70644521713257, Epoch: 58, training loss: 764.4991371035576, current learning rate 0.005, 5e-06
+accuracy:      0.879
+precision:     0.812
+recall:        0.718
+f1:            0.762
+accuracy:      0.844
+precision:     0.797
+recall:        0.644
+f1:            0.713
+===== Start training: epoch 59 =====
+Timing: 375.69596219062805, Epoch: 59, training loss: 573.7098641991615, current learning rate 0.005, 5e-06
+accuracy:      0.876
+precision:     0.765
+recall:        0.778
+f1:            0.771
+accuracy:      0.843
+precision:     0.747
+recall:        0.722
+f1:            0.734
+===== Start training: epoch 60 =====
+Timing: 375.86112928390503, Epoch: 60, training loss: 686.0195348262787, current learning rate 0.005, 5e-06
+accuracy:      0.877
+precision:     0.799
+recall:        0.726
+f1:            0.761
+accuracy:      0.855
+precision:     0.814
+recall:        0.667
+f1:            0.733
+===== Start training: epoch 61 =====
+Timing: 375.0394434928894, Epoch: 61, training loss: 745.4294257164001, current learning rate 0.005, 5e-06
+accuracy:      0.875
+precision:     0.794
+recall:        0.724
+f1:            0.758
+accuracy:      0.851
+precision:     0.810
+recall:        0.656
+f1:            0.725
+===== Start training: epoch 62 =====
+Timing: 374.896187543869, Epoch: 62, training loss: 687.4467228651047, current learning rate 0.005, 5e-06
+accuracy:      0.875
+precision:     0.787
+recall:        0.733
+f1:            0.759
+accuracy:      0.848
+precision:     0.782
+recall:        0.684
+f1:            0.729
+===== Start training: epoch 63 =====
+Timing: 374.7331733703613, Epoch: 63, training loss: 879.4163026809692, current learning rate 0.005, 5e-06
+accuracy:      0.870
+precision:     0.791
+recall:        0.703
+f1:            0.744
+accuracy:      0.848
+precision:     0.806
+recall:        0.648
+f1:            0.719
+===== Start training: epoch 64 =====
+Timing: 374.9662375450134, Epoch: 64, training loss: 623.0423910021782, current learning rate 0.005, 5e-06
+accuracy:      0.869
+precision:     0.750
+recall:        0.769
+f1:            0.760
+accuracy:      0.848
+precision:     0.756
+recall:        0.728
+f1:            0.742
+===== Start training: epoch 65 =====
+Timing: 375.30175280570984, Epoch: 65, training loss: 804.7254001498222, current learning rate 0.005, 5e-06
+accuracy:      0.866
+precision:     0.781
+recall:        0.698
+f1:            0.737
+accuracy:      0.847
+precision:     0.799
+recall:        0.654
+f1:            0.720
+===== Start training: epoch 66 =====
+Timing: 375.20700669288635, Epoch: 66, training loss: 752.2415478229523, current learning rate 0.005, 5e-06
+accuracy:      0.872
+precision:     0.771
+recall:        0.746
+f1:            0.758
+accuracy:      0.850
+precision:     0.788
+recall:        0.684
+f1:            0.732
+===== Start training: epoch 67 =====
+Timing: 375.9364950656891, Epoch: 67, training loss: 534.5098733305931, current learning rate 0.005, 5e-06
+accuracy:      0.875
+precision:     0.810
+recall:        0.698
+f1:            0.750
+accuracy:      0.842
+precision:     0.806
+recall:        0.625
+f1:            0.704
+===== Start training: epoch 68 =====
+Timing: 375.18238139152527, Epoch: 68, training loss: 617.4939975142479, current learning rate 0.005, 5e-06
+accuracy:      0.868
+precision:     0.747
+recall:        0.769
+f1:            0.758
+accuracy:      0.848
+precision:     0.752
+recall:        0.738
+f1:            0.745
+===== Start training: epoch 69 =====
+Timing: 375.05266761779785, Epoch: 69, training loss: 855.6900043487549, current learning rate 0.005, 5e-06
+accuracy:      0.867
+precision:     0.779
+recall:        0.707
+f1:            0.741
+accuracy:      0.852
+precision:     0.797
+recall:        0.680
+f1:            0.734
+===== Start training: epoch 70 =====
+Timing: 375.4625201225281, Epoch: 70, training loss: 635.9630501270294, current learning rate 0.005, 5e-06
+accuracy:      0.864
+precision:     0.747
+recall:        0.750
+f1:            0.748
+accuracy:      0.853
+precision:     0.767
+recall:        0.732
+f1:            0.749
+===== Start training: epoch 71 =====
+Timing: 375.0792384147644, Epoch: 71, training loss: 1165.275605559349, current learning rate 0.005, 5e-06
+accuracy:      0.869
+precision:     0.768
+recall:        0.735
+f1:            0.751
+accuracy:      0.852
+precision:     0.784
+recall:        0.699
+f1:            0.739
+===== Start training: epoch 72 =====
+Timing: 375.0044798851013, Epoch: 72, training loss: 1012.5262948870659, current learning rate 0.005, 5e-06
+accuracy:      0.864
+precision:     0.818
+recall:        0.638
+f1:            0.717
+accuracy:      0.845
+precision:     0.831
+recall:        0.607
+f1:            0.701
+===== Start training: epoch 73 =====
+Timing: 374.9926781654358, Epoch: 73, training loss: 963.9797625541687, current learning rate 0.005, 5e-06
+accuracy:      0.876
+precision:     0.811
+recall:        0.705
+f1:            0.754
+accuracy:      0.856
+precision:     0.816
+recall:        0.669
+f1:            0.735
+===== Start training: epoch 74 =====
+Timing: 374.7985713481903, Epoch: 74, training loss: 984.4087553024292, current learning rate 0.005, 5e-06
+accuracy:      0.873
+precision:     0.791
+recall:        0.718
+f1:            0.753
+accuracy:      0.856
+precision:     0.808
+recall:        0.682
+f1:            0.740
+===== Start training: epoch 75 =====
+Timing: 375.36490964889526, Epoch: 75, training loss: 713.5677589774132, current learning rate 0.005, 5e-06
+accuracy:      0.872
+precision:     0.762
+recall:        0.765
+f1:            0.763
+accuracy:      0.848
+precision:     0.759
+recall:        0.723
+f1:            0.741
+===== Start training: epoch 76 =====
+Timing: 374.6575345993042, Epoch: 76, training loss: 893.6970393061638, current learning rate 0.005, 5e-06
+accuracy:      0.876
+precision:     0.757
+recall:        0.793
+f1:            0.775
+accuracy:      0.849
+precision:     0.747
+recall:        0.748
+f1:            0.748
+===== Start training: epoch 77 =====
+Timing: 375.0285758972168, Epoch: 77, training loss: 720.8682576417923, current learning rate 0.005, 5e-06
+accuracy:      0.873
+precision:     0.784
+recall:        0.728
+f1:            0.755
+accuracy:      0.850
+precision:     0.785
+recall:        0.686
+f1:            0.732
+===== Start training: epoch 78 =====
+Timing: 375.34476685523987, Epoch: 78, training loss: 864.623582482338, current learning rate 0.005, 5e-06
+accuracy:      0.871
+precision:     0.774
+recall:        0.737
+f1:            0.755
+accuracy:      0.857
+precision:     0.801
+recall:        0.694
+f1:            0.744
+===== Start training: epoch 79 =====
+Timing: 374.9268352985382, Epoch: 79, training loss: 647.7925372123718, current learning rate 0.005, 5e-06
+accuracy:      0.857
+precision:     0.698
+recall:        0.828
+f1:            0.757
+accuracy:      0.844
+precision:     0.715
+recall:        0.800
+f1:            0.755
+===== Start training: epoch 80 =====
+Timing: 375.04816198349, Epoch: 80, training loss: 746.1225401759148, current learning rate 0.005, 5e-06
+accuracy:      0.874
+precision:     0.775
+recall:        0.750
+f1:            0.762
+accuracy:      0.851
+precision:     0.775
+recall:        0.708
+f1:            0.740
+===== Start training: epoch 81 =====
+Timing: 375.0731875896454, Epoch: 81, training loss: 1138.2064359784126, current learning rate 0.005, 5e-06
+accuracy:      0.881
+precision:     0.803
+recall:        0.737
+f1:            0.769
+accuracy:      0.850
+precision:     0.794
+recall:        0.675
+f1:            0.730
+===== Start training: epoch 82 =====
+Timing: 374.8677155971527, Epoch: 82, training loss: 786.0046604275703, current learning rate 0.005, 5e-06
+accuracy:      0.875
+precision:     0.777
+recall:        0.750
+f1:            0.763
+accuracy:      0.852
+precision:     0.781
+recall:        0.704
+f1:            0.741
+===== Start training: epoch 83 =====
+Timing: 375.41746616363525, Epoch: 83, training loss: 808.1080226302147, current learning rate 0.005, 5e-06
+accuracy:      0.869
+precision:     0.850
+recall:        0.625
+f1:            0.720
+accuracy:      0.843
+precision:     0.858
+recall:        0.572
+f1:            0.686
+===== Start training: epoch 84 =====
+Timing: 375.37798047065735, Epoch: 84, training loss: 879.9950277209282, current learning rate 0.005, 5e-06
+accuracy:      0.867
+precision:     0.849
+recall:        0.616
+f1:            0.714
+accuracy:      0.841
+precision:     0.854
+recall:        0.567
+f1:            0.681
+===== Start training: epoch 85 =====
+Timing: 412.4419174194336, Epoch: 85, training loss: 987.5829295516014, current learning rate 0.005, 5e-06
+accuracy:      0.869
+precision:     0.746
+recall:        0.778
+f1:            0.762
+accuracy:      0.846
+precision:     0.750
+recall:        0.727
+f1:            0.739
+===== Start training: epoch 86 =====
+Timing: 381.3985152244568, Epoch: 86, training loss: 829.4353201389313, current learning rate 0.005, 5e-06
+accuracy:      0.876
+precision:     0.833
+recall:        0.677
+f1:            0.747
+accuracy:      0.852
+precision:     0.845
+recall:        0.621
+f1:            0.716
+===== Start training: epoch 87 =====
+Timing: 381.0710241794586, Epoch: 87, training loss: 875.0289161205292, current learning rate 0.005, 5e-06
+accuracy:      0.878
+precision:     0.814
+recall:        0.707
+f1:            0.757
+accuracy:      0.855
+precision:     0.827
+recall:        0.654
+f1:            0.730
+===== Start training: epoch 88 =====
+Timing: 381.1668772697449, Epoch: 88, training loss: 928.002134680748, current learning rate 0.005, 5e-06
+accuracy:      0.872
+precision:     0.822
+recall:        0.668
+f1:            0.737
+accuracy:      0.843
+precision:     0.828
+recall:        0.601
+f1:            0.696
+===== Start training: epoch 89 =====
+Timing: 389.7031331062317, Epoch: 89, training loss: 736.9601568579674, current learning rate 0.005, 5e-06
+accuracy:      0.875
+precision:     0.859
+recall:        0.642
+f1:            0.735
+accuracy:      0.845
+precision:     0.858
+recall:        0.579
+f1:            0.691
+===== Start training: epoch 90 =====
+Timing: 379.89692544937134, Epoch: 90, training loss: 657.6708891391754, current learning rate 0.005, 5e-06
+accuracy:      0.857
+precision:     0.883
+recall:        0.539
+f1:            0.669
+accuracy:      0.829
+precision:     0.879
+recall:        0.499
+f1:            0.636
+===== Start training: epoch 91 =====
