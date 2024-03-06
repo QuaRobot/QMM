@@ -102,10 +102,8 @@ def exp(model, val_loader):
 
             y = torch.cat([y, r], dim=0)
             x = torch.cat([x, gloss_att.cpu().sum(-1)], dim=0)
-        print('1111')
     print(y)
     print(x)
-
 
 
     min_val = torch.min(y)
@@ -117,7 +115,6 @@ def exp(model, val_loader):
     polyfit = np.polyfit(x, y, deg=1)
     p = np.poly1d(polyfit)
 
-    # 计算拟合线附近的阴影区域
     y_fit = p(x)
     y_err = y - y_fit
     mean_err = np.mean(y_err)
@@ -126,7 +123,6 @@ def exp(model, val_loader):
     y_min = y_fit + mean_err - interval / 2
     y_max = y_fit + mean_err + interval / 2
 
-    # 画出拟合线和阴影区域
     fig, ax = plt.subplots()
     ax.plot(x, y_fit, color='red', label='fit')
     ax.fill_between(x, y_min, y_max, alpha=0.2, label='confidence interval')
